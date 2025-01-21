@@ -35,20 +35,38 @@ This repository contains the code for a University Management System built using
    │   │   ├── java/
    │   │   │   ├── com
    │   │   │   │   ├── User/
-   │   │   │   │      |___ model/
-   │   │   │   │      |___ dao/
-   │   │   │   |── controller
-   |   |   |   |    |──UserServlet
+   │   │   │   │   |   |___ model/
+   │   │   │   │   |   |___ dao/
+   |   |   |   |   |   |___ util/
+   |   |   |       ├── fee
+   |   |   |       |   ├── dao
+   |   |   |       |   ├── model
+   │   │   │       |─controller
+   |   |   |            ├── UserServlet
+   |   |   |            ├── FeeServlet
+   |   |   |            ├── LogoutServlet
+   |   |   |
    │   │   ├─── resources/
+   |   |   |       ├── schema
    │   │   ├─── webapp/
    │   │   │   ├── WEB-INF/
    │   │   │   │ └── web.xml
    │   │   │   ├── index.jsp
+   |   |   |   ├── infrastructure.jsp
+   |   |   |   ├── notifications.jsp
+   |   |   |   ├── fee.jsp
+   |   |   |   ├── calender.jsp
    │   │   │   ├── Login.jsp
-   │   │   │   ├── userprofile.jsp
+   │   │   │   ├── profile.jsp
    │   │   │   ├── Register.jsp
    │   │   │   ├── style.css
    │   │   │   └── script.js
+   |   |   
+   |   ├── test
+   |   |   ├──java
+   |   |   |   ├── FeeDaoTest
+   |   |   |   ├── UserDaoTest
+   |   
    ├── pom.xml
    |── schema
    └── README.md
