@@ -88,3 +88,9 @@ This repository contains the code for a University Management System built using
 ![Image](https://github.com/user-attachments/assets/abf4f5d7-cfef-49f2-a3f8-fd72adbcfc88)
 
 ![Image](https://github.com/user-attachments/assets/d0272485-7b21-440d-a9e1-cf7b3145450c)
+
+![Image](https://github.com/user-attachments/assets/31848109-8684-4989-a0e5-7869b1fcbdd7)
+
+![Image](https://github.com/user-attachments/assets/5674f63b-f38f-42eb-b082-87acbcb7bb78)
+
+![Image](https://github.com/user-attachments/assets/0f2eb50d-fea7-4d03-96ab-e65028c9968a)
