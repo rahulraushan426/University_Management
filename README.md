@@ -70,3 +70,21 @@ This repository contains the code for a University Management System built using
    ├── pom.xml
    |── schema
    └── README.md
+
+  ![Image](https://github.com/user-attachments/assets/00a6bdbc-df9f-42d5-ad4a-ed4759466e67)
+
+![Image](https://github.com/user-attachments/assets/fd01b69d-d70c-4d58-9db9-4dc8f6c81e38)
+
+![Image](https://github.com/user-attachments/assets/36c8b2ad-8d0c-4a15-903d-630ce0f9dc1c)
+
+![Image](https://github.com/user-attachments/assets/bdc6cd87-f676-4742-91c9-eadaf7876028)
+
+![Image](https://github.com/user-attachments/assets/5bf7b098-2b60-4a83-8440-c44beb50478f)
+
+![Image](https://github.com/user-attachments/assets/a690ffad-06c8-44fd-87d4-84e47b4c3b47)
+
+![Image](https://github.com/user-attachments/assets/0ac5bdfc-f36c-4c21-954c-45e89e1e59c9)
+
+![Image](https://github.com/user-attachments/assets/abf4f5d7-cfef-49f2-a3f8-fd72adbcfc88)
+
+![Image](https://github.com/user-attachments/assets/d0272485-7b21-440d-a9e1-cf7b3145450c)
