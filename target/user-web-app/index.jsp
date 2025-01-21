@@ -109,15 +109,14 @@
     <header></header>
     <nav>
         <ul>
-            <li><a href="#" onclick="showHome()">Home</a></li>
-            <li><a href="#">Programs</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="fee.jsp">Fee Details</a></li> <!-- Updated -->
+            <li><a href="#" onclick="showHome()">Home</a></li>       
             <li><a href="infrastructure.jsp">Infrastructure/Facilities</a></li> <!-- Updated -->
-            <li><a href="#" onclick="showNotifications()">Notifications</a></li>
             <li><a href="#about-footer">About Us</a></li> <!-- Updated -->
             <% User user = (User) session.getAttribute("user");
                if (user != null) { %>
+                <li><a href="FeeServlet">Fee Details</a></li> <!-- Changed from fee.jsp to FeeServlet -->
+                <li><a href="calender.jsp">Calender</a></li> <!-- Updated -->
+                <li><a href="notifications.jsp">Notifications</a></li>
                 <li><a href="UserServlet?action=profile">Profile</a></li>
                 <li><a href="UserServlet?action=logout">Logout</a></li>
             <% } else { %>

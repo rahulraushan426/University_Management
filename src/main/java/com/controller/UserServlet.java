@@ -62,6 +62,7 @@ public class UserServlet extends HttpServlet {
     private void loginUser(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
+        String returnUrl = request.getParameter("returnUrl");
 
         try (Connection con = DBconnection.getConnection()) {
             String query = "SELECT * FROM users WHERE email = ? AND password = ?";
@@ -71,10 +72,17 @@ public class UserServlet extends HttpServlet {
             ResultSet rs = stmt.executeQuery();
 
             if (rs.next()) {
-                User user = new User(rs.getInt("id"), rs.getString("name"), rs.getString("email"), rs.getString("password"), rs.getInt("rollNo"));
+                User user = new User(rs.getInt("id"), rs.getString("name"), rs.getString("email"), 
+                    rs.getString("password"), rs.getInt("rollNo"));
                 HttpSession session = request.getSession();
                 session.setAttribute("user", user);
-                response.sendRedirect("index.jsp");
+                session.setAttribute("userEmail", email);
+                
+                if (returnUrl != null && !returnUrl.isEmpty()) {
+                    response.sendRedirect(returnUrl);
+                } else {
+                    response.sendRedirect("index.jsp");
+                }
             } else {
                 request.setAttribute("error", "Invalid email or password");
                 request.getRequestDispatcher("Login.jsp").forward(request, response);
